@@ -1,0 +1,8 @@
+build/*
+
+*~.nib
+*.swp
+.DS_Store
+
+*.xcworkspace
+xcuserdata/
