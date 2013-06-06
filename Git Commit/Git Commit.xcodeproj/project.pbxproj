@@ -258,6 +258,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "Git Commit";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -275,6 +276,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "Git Commit";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
