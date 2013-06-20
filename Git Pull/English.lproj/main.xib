@@ -66,7 +66,6 @@
 						</object>
 						<string key="NSFrame">{{126, 61}, {208, 19}}</string>
 						<reference key="NSSuperview" ref="595191707"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1022371908"/>
 						<string key="NSReuseIdentifierKey">_NS:15</string>
 						<bool key="NSEnabled">YES</bool>
@@ -111,7 +110,6 @@
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{124, 33}, {116, 18}}</string>
 						<reference key="NSSuperview" ref="595191707"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="496545476">
@@ -144,7 +142,6 @@
 						<int key="NSvFlags">258</int>
 						<string key="NSFrame">{{17, 63}, {65, 14}}</string>
 						<reference key="NSSuperview" ref="595191707"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="503670211"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="642146340">
@@ -173,7 +170,6 @@
 				</object>
 				<string key="NSFrameSize">{354, 97}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="91547577"/>
 				<object class="NSMutableString" key="NSClassName">
 					<characters key="NS.bytes">NSView</characters>
@@ -247,22 +243,13 @@
 							<string key="NSBinding">value</string>
 							<string key="NSKeyPath">selection.repository</string>
 							<object class="NSDictionary" key="NSOptions">
-								<bool key="EncodedWithXMLCoder">YES</bool>
-								<object class="NSArray" key="dict.sortedKeys">
-									<bool key="EncodedWithXMLCoder">YES</bool>
-									<string>NSContinuouslyUpdatesValue</string>
-									<string>NSNullPlaceholder</string>
-								</object>
-								<object class="NSArray" key="dict.values">
-									<bool key="EncodedWithXMLCoder">YES</bool>
-									<boolean value="YES"/>
-									<string>origin master</string>
-								</object>
+								<string key="NS.key.0">NSContinuouslyUpdatesValue</string>
+								<boolean value="YES" key="NS.object.0"/>
 							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">100037</int>
+					<int key="connectionID">100038</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -399,7 +386,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100037</int>
+			<int key="maxID">100038</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
