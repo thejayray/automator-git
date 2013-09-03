@@ -11,7 +11,7 @@
 {
     NSEnumerator *enumerate = [input objectEnumerator];
     NSString *path    = [enumerate nextObject];
-    NSString *message = [commitMessage stringValue];
+    NSString *message = [[self parameters] objectForKey: @"commitMessage"];
     NSString *cmd     = [NSString stringWithFormat: @"PATH=/opt/local/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin; git commit -m '%@'", message];
 
     NSTask *task  = [[NSTask alloc] init];

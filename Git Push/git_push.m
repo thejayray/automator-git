@@ -15,7 +15,7 @@
 {
     NSEnumerator *enumerate = [input objectEnumerator];
     NSString *path = [enumerate nextObject];
-    NSString *repo = [repository stringValue];
+    NSString *repo = [[self parameters] objectForKey: @"repository"];
     NSString *cmd  = [NSString stringWithFormat: @"PATH=/opt/local/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin; git push %@", repo];
 
     NSTask *task  = [[NSTask alloc] init];

@@ -15,9 +15,11 @@
 {
     NSEnumerator *enumerate = [input objectEnumerator];
     NSString *path = [enumerate nextObject];
-    NSString *repo = [repository stringValue];
+    NSString *repo = [[self parameters] objectForKey: @"repository"];
     NSString *opt;
-    if ([rebase state] == NSOnState) {
+    bool rebase = [[[self parameters] objectForKey: @"rebase"] boolValue];
+
+    if (rebase) {
 	opt = [[NSString alloc] initWithString:@"--rebase"];
     } else {
 	opt = [[NSString alloc] initWithString:@""];
