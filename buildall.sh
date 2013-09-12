@@ -12,13 +12,23 @@ while true; do
   esac
 done
 
+RELEASEDIR="Automator-Git/"
+
+if [ ! -d $RELEASEDIR ]
+then
+    mkdir $RELEASEDIR
+fi
+RELEASEDIR=$(python -c "import os,sys; print os.path.realpath(sys.argv[1])" $RELEASEDIR)
+
 for dir in Git*
 do
     pushd "$dir"
 
     if xcodebuild -target "$dir" build
     then
-        cp -r build/Release/"$dir".action ~/Library/Automator/
+        cp -rv build/Release/"$dir".action $RELEASEDIR
     fi
     popd
 done
+
+tar czf Automator-Git.tar.gz Automator-Git/

@@ -7,3 +7,5 @@ build/*
 
 *.xcworkspace
 xcuserdata/
+Automator-Git/
+Automator-Git.tar.gz
