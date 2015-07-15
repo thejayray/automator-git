@@ -20,9 +20,9 @@
     bool rebase = [[[self parameters] objectForKey: @"rebase"] boolValue];
 
     if (rebase) {
-	opt = [[NSString alloc] initWithString:@"--rebase"];
+	opt = @"--rebase";
     } else {
-	opt = [[NSString alloc] initWithString:@""];
+	opt = @"";
     }
 
     NSString *cmd  = [NSString stringWithFormat: @"PATH=/opt/local/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin; git pull %@ %@", opt, repo];
