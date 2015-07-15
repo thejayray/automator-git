@@ -30,11 +30,8 @@
 
     NSFileHandle *handle = [pipe fileHandleForReading];
     NSData *data = [handle  readDataToEndOfFile];
-    NSString *result = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
-    [cmd release];
-    [task release];
-    [pipe release];
 
     return input;
 }
